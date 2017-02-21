@@ -20,10 +20,17 @@ sphere{ <0,0,0>,0.4 scale <30,30,30> rotate<0,0,0> translate<-0.5,1,1000>
       }
 
 // sky ---------------------------
-plane{<0,1,0>,1 hollow  
-       texture{ pigment{color rgb<0.01,0.01,0.01>}
-               finish{ambient 0.1}}    
-       scale 10000}
+sphere{<0,0,0>,1 hollow
+ texture{
+  pigment{gradient <0,1,0>
+          color_map{
+           [0.0 color White]
+           [0.8 color rgb<0.1,0.25,0.75>]
+           [1.0 color rgb<0.1,0.25,0.75>] }
+         } // end pigment
+  finish {ambient 1 diffuse 0}
+  } // end of texture
+ scale 10000
 
 
 // fog -------------
