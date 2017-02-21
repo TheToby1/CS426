@@ -1,0 +1,7 @@
+Height=7680
+Width=4320
+Antialias=On
+Antialias_Threshold=0.3
+
+Input_File_Name="assignment1.pov" 
+Output_File_Name=assignment1
